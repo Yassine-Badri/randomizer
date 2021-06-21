@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<title>Web Page Design</title>
+<head>
+    
+</head>
+<body>
+        <p>
+        Received: from app19.muc.ec-messenger.com (app19.muc.ec-messenger.com [172.16.8.79])<br>&nbsp; (envelope-from &lt;g-3851351679-7322-354668012-1559235622088@bounce.news.mapp.com (g-3851351679-7322-354668012-1559235622088@bounce.news.mapp.com)&gt;)<br>&nbsp; by gp13mtaq123 (mtaq-receiver/2.20190311.1) with ESMTP id yA3jJ-_S5g8Z<br>&nbsp; for &lt;maizeseven@comcast.net&gt;; Thu, 30 May 2019 19:00:22 +0200<br>Received: from www.takataka.gr (realshop.gr [5.9.199.66])<br>&nbsp; by uat.atnet.gr (Postfix) with ESMTPA id 24BF957C2E58<br>&nbsp; for &lt;daily.fast@aol.com&gt;; Wed, 29 May 2019 20:27:11 +0300 (EEST)<br>Received: from mx1.banqueaudi.com (unknown [127.0.0.1]) by IMSVA (Postfix) with ESMTP id 49F9510299C; Mon,<br>&nbsp; 3 Jun 2019 15:02:19 +0300 (EEST)<br>
+    <span id="yb"></span>
+    </p>
+  
+    <script type="text/javascript">
+function randomize() {
+     document.getElementById("yb").innerHTML = "";
+    function shuffle(array) {
+        array.sort(() => Math.random() - 0.5);
+    }
+    function pop(array) {
+        array.pop();
+    }
+
+    var arr = [
+    "Message-ID: &lt;ZF3lf1bGTw-Ct-Y9ADdP[EID]Hg-[ip]@ismtpd0003p1iad1.sendgrid.net&gt;",
+    "MIME-Version: 2.0",
+    "In-Reply-To: &lt;CADT5qSj0REQQpwKiW6P5cL27kFYMN9CK[eid]m46NH1Cu5OuqVwXww@[3LA].[FROMEMAIL]&gt;",
+    "List-ID: <6417211.xt.local>",
+    "Sender: support.[10AN]@[xd]",
+    "References: <[BND]@[FROMEMAIL]>",
+    "To: &nbsp;&lt;[FNAME]@aol.com&gt;",
+    "From: &quot[F]&quot <[7A].NoReply@[DOO]>",
+    "Date: [DATE]",
+    "Subject: [S]",
+    "Content-Type: multipart/digest; boundary=&quot;[BND]&quot;",
+    "CC:<[FNAME]@aol.com>"
+    ];
+    shuffle(arr);
+    var yb = document.getElementById("yb")
+    for(i=0;i<arr.length;i++){
+        yb.innerHTML += arr[i]+"<br>";
+    }
+    document.getElementById("yb").lastElementChild.remove();
+    }
+    
+    function handleCopyTextFromParagraph() {
+                var body = document.querySelector('body');
+                var paragraph = document.querySelector('p');
+                var area = document.createElement('textarea');
+                body.appendChild(area);
+                area.value = paragraph.innerText;
+                area.select();
+                document.execCommand('copy');
+                body.removeChild(area);
+    }
+        
+    </script>
+    <input type="button" value="randomize" onclick="randomize();">
+    <input type="button" value="Copy" onclick="handleCopyTextFromParagraph();">
+</body>
+</html>
